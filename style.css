@@ -15,7 +15,12 @@ body {
 .tela-oculta {
   display: none;
   padding: 20px;
+  max-width: 800px;
+  margin: auto;
+  text-align: center;
+  font-family: sans-serif;
 }
+
 
 .tela-visivel {
   display: block;
