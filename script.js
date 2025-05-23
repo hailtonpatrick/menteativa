@@ -18,5 +18,8 @@ function mostrarTela(id) {
   telas.forEach(tela => tela.classList.add('tela-oculta'));
   document.getElementById(id).classList.remove('tela-oculta');
 }
-
+function mostrarTela(id) {
+  document.getElementById('telaInicial').style.display = (id === 'telaInicial') ? 'block' : 'none';
+  document.getElementById('telaQueIsso').style.display = (id === 'telaQueIsso') ? 'block' : 'none';
+}
 
