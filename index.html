@@ -9,18 +9,21 @@
 
 <body>
   <!-- Tela inicial com imagem de fundo e áreas clicáveis -->
-  <div id="telaInicial">
-    <map name="image-map">
-    <area 
-        target="_self" 
-        alt="Clique para saber mais sobre o projeto" 
-        title="Clique para saber mais sobre o projeto" 
-        href="" 
-        coords="1522,64,2282,465" 
-        shape="rect">
-</map>
+ <div id="telaInicial">
+  <img src="MENTEATIVAback1.png" usemap="#image-map" alt="Mapa Interativo" class="imagem-fundo">
 
-  </div>
+  <map name="image-map">
+    <area 
+      shape="rect" 
+      coords="1522,64,2282,465" 
+      alt="Clique para saber mais sobre o projeto" 
+      title="Clique para saber mais sobre o projeto" 
+      href="#" 
+      target="_self"
+      onclick="mostrarTela('telaQueIsso'); return false;">
+  </map>
+</div>
+
 
   <!-- Tela interna: informações do projeto -->
   <div id="telaQueIsso" class="tela-oculta">
