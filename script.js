@@ -7,4 +7,16 @@ function mostrarTela(id) {
   const telaEscolhida = document.getElementById(id);
   telaEscolhida.classList.remove('tela-oculta');
 }
+window.addEventListener('load', function() {
+  if (typeof imageMapResize === 'function') {
+    imageMapResize();
+  }
+});
+
+function mostrarTela(id) {
+  const telas = document.querySelectorAll('div[id^="tela"]');
+  telas.forEach(tela => tela.classList.add('tela-oculta'));
+  document.getElementById(id).classList.remove('tela-oculta');
+}
+
 
