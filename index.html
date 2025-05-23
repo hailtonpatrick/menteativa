@@ -12,7 +12,7 @@
   <div id="telaInicial">
     <img src="MENTEATIVAback1.png" usemap="#mapa" alt="Mapa Interativo" class="imagem-fundo">
     <map name="mapa">
-      <!-- Exemplo: clique na logo leva ao conteúdo do projeto -->
+      <!-- Área clicável na logo -->
       <area shape="rect" coords="850,30,1170,130" alt="Logo" href="#" onclick="mostrarTela('telaQueIsso'); return false;">
     </map>
   </div>
@@ -20,11 +20,15 @@
   <!-- Tela interna: informações do projeto -->
   <div id="telaQueIsso" class="tela-oculta">
     <h1>O que é o Projeto Mente Ativa?</h1>
-    <p>O projeto promove treinamento, estimulação cognitiva e suporte psicológico para desenvolver foco, atenção e tomada de decisão, promovendo uma direção mais segura.</p>
+    <p>
+      O projeto promove treinamento, estimulação cognitiva e suporte psicológico para desenvolver foco,
+      atenção e tomada de decisão, promovendo uma direção mais segura.
+    </p>
     <p>Foco no cérebro, resultado na estrada.</p>
     <button onclick="mostrarTela('telaInicial')">← Voltar</button>
   </div>
 
+  <!-- Scripts -->
   <script src="script.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/image-map-resizer@1.0.10/js/imageMapResizer.min.js"></script>
 </body>
