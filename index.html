@@ -1,22 +1,28 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Mente Ativa</title>
-  <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8">
+  <title>Projeto Mente Ativa</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="container">
-    <img src="MENTEATIVAback.png" usemap="#mapa" alt="Apresentação Mente Ativa" class="imagem-base" />
-
+  <!-- Tela inicial com imagem de fundo e áreas clicáveis -->
+  <div id="telaInicial">
+    <img src="MENTEATIVAback.png" usemap="#mapa" alt="Mapa Interativo" class="imagem-fundo">
     <map name="mapa">
-      <!-- Exemplo de áreas clicáveis (ajuste as coordenadas conforme o que deseja) -->
-      <!-- SOLUÇÃO -->
-      <area shape="rect" coords="730,125,1160,280" href="queisso.html" alt="Solução" />
-
-      <!-- Adicione mais áreas aqui com base no que deseja que seja clicável -->
+      <!-- Exemplo: clique na logo leva ao conteúdo do projeto -->
+      <area shape="rect" coords="850,30,1170,130" alt="Logo" href="#" onclick="mostrarTela('telaQueIsso'); return false;">
     </map>
   </div>
+
+  <!-- Tela interna: informações do projeto -->
+  <div id="telaQueIsso" class="tela-oculta">
+    <h1>O que é o Projeto Mente Ativa?</h1>
+    <p>O projeto promove treinamento, estimulação cognitiva e suporte psicológico para desenvolver foco, atenção e tomada de decisão, promovendo uma direção mais segura.</p>
+    <p>Foco no cérebro, resultado na estrada.</p>
+    <button onclick="mostrarTela('telaInicial')">← Voltar</button>
+  </div>
+
+  <script src="script.js"></script>
 </body>
 </html>
