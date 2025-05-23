@@ -1,15 +1,20 @@
 body {
   margin: 0;
   font-family: Arial, sans-serif;
-  background: #f0f2f5;
-  text-align: center;
+  background-color: #fff;
 }
 
-.container {
-  margin-top: 20px;
-}
-
-.imagem-base {
-  max-width: 100%;
+.imagem-fundo {
+  width: 100%;
   height: auto;
+  display: block;
+}
+
+.tela-oculta {
+  display: none;
+  padding: 20px;
+}
+
+.tela-visivel {
+  display: block;
 }
