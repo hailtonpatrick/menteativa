@@ -22,3 +22,56 @@ body, html {
   background-color: #f9f9f9;
   min-height: 100vh;
 }
+/* Tela de descrição do projeto */
+#telaQueIsso {
+  max-width: 800px;
+  margin: 60px auto;
+  padding: 40px;
+  background-color: #ffffffcc;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #333;
+  line-height: 1.6;
+  backdrop-filter: blur(8px);
+}
+
+#telaQueIsso h1 {
+  font-size: 2em;
+  margin-bottom: 20px;
+  color: #004880;
+  text-align: center;
+}
+
+#telaQueIsso p {
+  font-size: 1.1em;
+  margin-bottom: 16px;
+}
+
+#telaQueIsso ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+#telaQueIsso ul li::before {
+  content: "✔ ";
+  color: #2a8f4a;
+  font-weight: bold;
+}
+
+#telaQueIsso button {
+  display: block;
+  margin: 30px auto 0;
+  padding: 12px 24px;
+  background-color: #004880;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#telaQueIsso button:hover {
+  background-color: #0072b1;
+}
