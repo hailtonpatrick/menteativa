@@ -20,6 +20,15 @@
         href="#" 
         onclick="mostrarTela('telaQueIsso'); return false;" 
         target="_self">
+
+      <area 
+  shape="poly" 
+  coords="29,676,31,544,430,542,438,672" 
+  alt="Clique para saber mais sobre o problema" 
+  title="Clique para saber mais sobre o problema" 
+  href="#" 
+  onclick="mostrarTela('telaProblema'); return false;" 
+  target="_self">
     </map>
   </div>
 
@@ -43,6 +52,13 @@
 
   <button onclick="mostrarTela('telaInicial')">← Voltar</button>
 </div>
+  <div id="telaProblema" class="tela-oculta">
+  <h1>O Problema</h1>
+  <img src="problema.png" alt="Imagem sobre o problema" style="max-width:100%; height:auto; border-radius: 12px; box-shadow: 0 8px 24px rgba(0,0,0,0.15);">
+  <p style="margin-top: 20px; text-align: center;">Vamos desenvolver mais sua mente?</p>
+  <button onclick="mostrarTela('telaInicial')">← Voltar</button>
+</div>
+
 
 
   <script src="script.js"></script>
