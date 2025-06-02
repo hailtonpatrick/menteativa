@@ -1,64 +1,65 @@
-/* Reset e estilo geral */
 body, html {
   margin: 0;
   padding: 0;
   width: 100%;
   height: 100%;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: sans-serif;
   overflow-x: hidden;
-  background-color: #f0f0f0;
 }
 
-/* Imagem de fundo responsiva */
 .imagem-fundo {
   width: 100%;
   height: auto;
   display: block;
 }
 
-/* Telas ocultas e estilização padrão */
 .tela-oculta {
   display: none;
+  padding: 20px;
+}
+
+#telaQueIsso {
+  background-color: #f9f9f9;
+  min-height: 100vh;
+}
+
+#telaQueIsso {
   max-width: 800px;
   margin: 60px auto;
   padding: 40px;
-  background-color: #ffffffcc; /* branco semi-transparente */
+  background-color: #ffffffcc;
   border-radius: 12px;
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   color: #333;
   line-height: 1.6;
   backdrop-filter: blur(8px);
 }
 
-/* Títulos */
-.tela-oculta h1 {
+#telaQueIsso h1 {
   font-size: 2em;
   margin-bottom: 20px;
-  color: #004880; /* azul institucional */
+  color: #004880;
   text-align: center;
 }
 
-/* Parágrafos */
-.tela-oculta p {
+#telaQueIsso p {
   font-size: 1.1em;
   margin-bottom: 16px;
-  text-align: justify;
 }
 
-/* Listas */
-.tela-oculta ul {
+#telaQueIsso ul {
   list-style: none;
   padding-left: 0;
 }
 
-.tela-oculta ul li::before {
+#telaQueIsso ul li::before {
   content: "✔ ";
-  color: #2a8f4a; /* verde de confirmação */
+  color: #2a8f4a;
   font-weight: bold;
 }
 
-/* Botões */
-.tela-oculta button {
+#telaQueIsso button {
   display: block;
   margin: 30px auto 0;
   padding: 12px 24px;
@@ -71,39 +72,112 @@ body, html {
   transition: background-color 0.3s ease;
 }
 
-.tela-oculta button:hover {
-  background-color: #0072b1; /* azul mais claro no hover */
+#telaQueIsso button:hover {
+  background-color: #0072b1;
 }
 
-/* Imagens dentro das telas */
-.tela-oculta img {
+/* Estilo para o Problema */
+#telaProblema {
+  max-width: 800px;
+  margin: 60px auto;
+  padding: 40px;
+  background-color: #ffffffcc;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #333;
+  line-height: 1.6;
+  backdrop-filter: blur(8px);
+}
+
+#telaProblema h1 {
+  font-size: 2em;
+  margin-bottom: 20px;
+  color: #004880;
+  text-align: center;
+}
+
+#telaProblema p {
+  font-size: 1.1em;
+  margin-bottom: 16px;
+  text-align: justify;
+}
+
+#telaProblema img {
   max-width: 100%;
   height: auto;
   border-radius: 12px;
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 8px 24px rgba(0,0,0,0.15);
   display: block;
   margin: 0 auto 20px auto;
 }
 
-/* Ajuste de link */
-.tela-oculta a {
+#telaProblema button {
+  display: block;
+  margin: 30px auto 0;
+  padding: 12px 24px;
+  background-color: #004880;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#telaProblema button:hover {
+  background-color: #0072b1;
+}
+
+/* Estilo para a Causa */
+#telaCausa {
+  max-width: 800px;
+  margin: 60px auto;
+  padding: 40px;
+  background-color: #ffffffcc;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #333;
+  line-height: 1.6;
+  backdrop-filter: blur(8px);
+}
+
+#telaCausa h1 {
+  font-size: 2em;
+  margin-bottom: 20px;
   color: #004880;
-  text-decoration: none;
-  font-weight: bold;
+  text-align: center;
 }
 
-.tela-oculta a:hover {
-  text-decoration: underline;
+#telaCausa p {
+  font-size: 1.1em;
+  margin-bottom: 16px;
+  text-align: justify;
 }
 
-/* Ajustes responsivos */
-@media (max-width: 600px) {
-  .tela-oculta {
-    padding: 20px;
-    margin: 20px auto;
-  }
+#telaCausa img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.15);
+  display: block;
+  margin: 0 auto 20px auto;
+}
 
-  .tela-oculta h1 {
-    font-size: 1.5em;
-  }
+#telaCausa button {
+  display: block;
+  margin: 30px auto 0;
+  padding: 12px 24px;
+  background-color: #004880;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#telaCausa button:hover {
+  background-color: #0072b1;
 }
