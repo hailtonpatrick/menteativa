@@ -5,8 +5,12 @@ function mostrarTela(id) {
   const telaEscolhida = document.getElementById(id);
   if (telaEscolhida) {
     telaEscolhida.classList.remove('tela-oculta');
+
     if (id === 'telaInicial') {
-      window.scrollTo(0, 0);
+      window.scrollTo(0, 0);  // Volta ao topo
+      if (typeof imageMapResize === 'function') {
+        imageMapResize();  // Reajusta o mapa interativo
+      }
     }
   }
 }
