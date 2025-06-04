@@ -35,8 +35,10 @@ function iniciarJogoReacao() {
 
   const jogoArea = document.getElementById('jogoArea');
   const resultado = document.getElementById('resultadoJogo');
+  const distanciaElemento = document.getElementById('distanciaJogo');
 
   resultado.textContent = '';
+  distanciaElemento.textContent = '';
   jogoArea.style.backgroundColor = 'red';
   jogoArea.textContent = 'Aguarde a cor verde...';
   esperandoReacao = false;
@@ -73,6 +75,13 @@ function finalizarReacao() {
   else frase = 'Tente focar mais da próxima vez.';
 
   resultado.textContent = `Seu tempo de reação foi: ${tempoReacao.toFixed(0)} ms. ${frase}`;
+
+  // Cálculo da distância percorrida
+  const tempoReacaoSegundos = tempoReacao / 1000;
+  const distancia = tempoReacaoSegundos * 28;
+
+  const distanciaElemento = document.getElementById('distanciaJogo');
+  distanciaElemento.textContent = `Se estivesse em um carro a 100 km/h e um imprevisto acontecesse, você andaria ${distancia.toFixed(2)} metros até seu cérebro entender o que aconteceu.`;
 }
 
 // Eventos para clique ou toque na área do jogo
@@ -81,15 +90,6 @@ document.getElementById('jogoArea').addEventListener('touchstart', e => {
   e.preventDefault();
   finalizarReacao();
 });
-
-const tempoReacaoSegundos = tempoReacao / 1000;
-const distancia = tempoReacaoSegundos * 28;
-
-resultado.textContent = `Seu tempo de reação foi: ${tempoReacao.toFixed(0)} ms. ${frase}`;
-
-const distanciaElemento = document.getElementById('distanciaJogo');
-distanciaElemento.textContent = `Nesse tempo, o veículo percorreria aproximadamente: ${distancia.toFixed(2)} metros.`;
-
 
 // Botão para voltar para tela inicial
 document.getElementById('btnVoltarJogo').addEventListener('click', () => {
