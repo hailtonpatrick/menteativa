@@ -79,7 +79,7 @@ function finalizarReacao() {
   const distancia = tempoReacaoSegundos * 28;
 
   const distanciaElemento = document.getElementById('distanciaJogo');
-  distanciaElemento.textContent = `Nesse tempo, o veículo percorreria aproximadamente: ${distancia.toFixed(2)} metros.`;
+  distanciaElemento.textContent = `Nesse tempo, um veículo a 100km/h percorreria aproximadamente: ${distancia.toFixed(2)} metros.`;
 }
 
 // Eventos para clique ou toque na área do jogo
