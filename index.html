@@ -81,6 +81,17 @@
         onclick="mostrarTela('telaAndreaCampos'); return false;"
         target="_self"
       />
+
+      <!-- Área do jogo de reação -->
+      <area
+        shape="rect"
+        coords="1858,959,2145,1213"
+        alt="Teste de Reação"
+        title="Teste de Reação"
+        href="#"
+        onclick="iniciarJogoReacao(); return false;"
+        target="_self"
+      />
     </map>
   </div>
 
@@ -164,6 +175,48 @@
   <div id="telaPatricyaKelly" class="tela-oculta tela-interna">
     <img src="patricyakelly.png" alt="Patricya Kelly" />
     <button onclick="mostrarTela('telaInicial')">← Voltar</button>
+  </div>
+
+  <!-- Nova tela do jogo de reação -->
+  <div id="telaJogoReacao" class="tela-oculta tela-interna" style="text-align:center; padding: 20px;">
+    <div
+      id="jogoArea"
+      style="
+        width: 100%;
+        height: 70vh;
+        background-color: red;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        font-size: 2.5em;
+        user-select: none;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        cursor: pointer;
+      "
+      >
+      Aguarde a cor verde...
+    </div>
+    <div id="resultadoJogo" style="margin-top: 20px; font-size: 1.3em; min-height: 2em;"></div>
+    <button
+      id="btnVoltarJogo"
+      style="
+        margin-top: 30px;
+        padding: 12px 24px;
+        background-color: #004880;
+        color: #fff;
+        border: none;
+        border-radius: 6px;
+        cursor: pointer;
+        font-size: 1.1em;
+      "
+    >
+      ← Voltar
+    </button>
+    <p style="margin-top: 25px; font-size: 1.1em; color: #004880;">
+      Quer melhorar sua reação e muito mais? Participe do <strong>Projeto Mente Ativa</strong>!
+    </p>
   </div>
 
   <script src="script.js"></script>
