@@ -16,7 +16,6 @@ function mostrarTela(id) {
   }
 }
 
-}
 
 window.addEventListener('load', function () {
   if (typeof imageMapResize === 'function') {
