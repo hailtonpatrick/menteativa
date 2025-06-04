@@ -5,9 +5,9 @@ function mostrarTela(id) {
   const telaEscolhida = document.getElementById(id);
   if (telaEscolhida) {
     telaEscolhida.classList.remove('tela-oculta');
-    if (telaId === 'telaInicial') {
-    window.scrollTo(0, 0);
-  }
+    if (id === 'telaInicial') {
+      window.scrollTo(0, 0);
+    }
   }
 }
 
