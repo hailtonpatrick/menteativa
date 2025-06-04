@@ -7,14 +7,15 @@ function mostrarTela(id) {
   if (telaEscolhida) {
     telaEscolhida.classList.remove('tela-oculta');
 
-    // Se quiser, pode resetar scroll da tela inicial
-    if (id === 'telaInicial') {
-      window.scrollTo(0, 0);
-      if (typeof imageMapResize === 'function') {
-        imageMapResize();
-      }
+    // Reseta o scroll para o topo toda vez que qualquer tela for mostrada
+    window.scrollTo(0, 0);
+
+    if (typeof imageMapResize === 'function') {
+      imageMapResize();
     }
   }
+}
+
 }
 
 window.addEventListener('load', function () {
