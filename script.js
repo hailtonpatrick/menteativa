@@ -82,6 +82,15 @@ document.getElementById('jogoArea').addEventListener('touchstart', e => {
   finalizarReacao();
 });
 
+const tempoReacaoSegundos = tempoReacao / 1000;
+const distancia = tempoReacaoSegundos * 28;
+
+resultado.textContent = `Seu tempo de reação foi: ${tempoReacao.toFixed(0)} ms. ${frase}`;
+
+const distanciaElemento = document.getElementById('distanciaJogo');
+distanciaElemento.textContent = `Nesse tempo, o veículo percorreria aproximadamente: ${distancia.toFixed(2)} metros.`;
+
+
 // Botão para voltar para tela inicial
 document.getElementById('btnVoltarJogo').addEventListener('click', () => {
   mostrarTela('telaInicial');
