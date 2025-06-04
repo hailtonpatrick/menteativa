@@ -18,166 +18,90 @@ body, html {
   padding: 20px;
 }
 
+/* Estilos comuns para todas as telas internas */
+.tela-interna {
+  max-width: 800px;
+  margin: 60px auto;
+  padding: 40px;
+  background-color: #ffffffcc;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #333;
+  line-height: 1.6;
+  backdrop-filter: blur(8px);
+}
+
+.tela-interna h1 {
+  font-size: 2em;
+  margin-bottom: 20px;
+  color: #004880;
+  text-align: center;
+}
+
+.tela-interna p {
+  font-size: 1.1em;
+  margin-bottom: 16px;
+  text-align: justify;
+}
+
+.tela-interna img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.15);
+  display: block;
+  margin: 0 auto 20px auto;
+}
+
+.tela-interna button {
+  display: block;
+  margin: 30px auto 0;
+  padding: 12px 24px;
+  background-color: #004880;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.tela-interna button:hover {
+  background-color: #0072b1;
+}
+
+/* Especificação para telas que não possuem texto (só título, imagem e botão) */
+.tela-interna.sem-texto p {
+  display: none; /* ou não usar <p> nessas telas */
+}
+
+/* Agora aplicando as classes às telas específicas */
+
+/* Tela QueIsso */
 #telaQueIsso {
   background-color: #f9f9f9;
-  min-height: 100vh;
 }
 
 #telaQueIsso {
-  max-width: 800px;
-  margin: 60px auto;
-  padding: 40px;
-  background-color: #ffffffcc;
-  border-radius: 12px;
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  color: #333;
-  line-height: 1.6;
-  backdrop-filter: blur(8px);
+  /* já tem a classe tela-interna, só aplicar */
 }
 
-#telaQueIsso h1 {
-  font-size: 2em;
-  margin-bottom: 20px;
-  color: #004880;
-  text-align: center;
-}
-
-#telaQueIsso p {
-  font-size: 1.1em;
-  margin-bottom: 16px;
-}
-
-#telaQueIsso ul {
-  list-style: none;
-  padding-left: 0;
-}
-
-#telaQueIsso ul li::before {
-  content: "✔ ";
-  color: #2a8f4a;
-  font-weight: bold;
-}
-
-#telaQueIsso button {
-  display: block;
-  margin: 30px auto 0;
-  padding: 12px 24px;
-  background-color: #004880;
-  color: #fff;
-  border: none;
-  border-radius: 6px;
-  font-size: 1em;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-}
-
-#telaQueIsso button:hover {
-  background-color: #0072b1;
-}
-
-/* Estilo para o Problema */
+/* Tela Problema */
 #telaProblema {
-  max-width: 800px;
-  margin: 60px auto;
-  padding: 40px;
-  background-color: #ffffffcc;
-  border-radius: 12px;
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  color: #333;
-  line-height: 1.6;
-  backdrop-filter: blur(8px);
 }
 
-#telaProblema h1 {
-  font-size: 2em;
-  margin-bottom: 20px;
-  color: #004880;
-  text-align: center;
-}
-
-#telaProblema p {
-  font-size: 1.1em;
-  margin-bottom: 16px;
-  text-align: justify;
-}
-
-#telaProblema img {
-  max-width: 100%;
-  height: auto;
-  border-radius: 12px;
-  box-shadow: 0 8px 24px rgba(0,0,0,0.15);
-  display: block;
-  margin: 0 auto 20px auto;
-}
-
-#telaProblema button {
-  display: block;
-  margin: 30px auto 0;
-  padding: 12px 24px;
-  background-color: #004880;
-  color: #fff;
-  border: none;
-  border-radius: 6px;
-  font-size: 1em;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-}
-
-#telaProblema button:hover {
-  background-color: #0072b1;
-}
-
-/* Estilo para a Causa */
+/* Tela Causa */
 #telaCausa {
-  max-width: 800px;
-  margin: 60px auto;
-  padding: 40px;
-  background-color: #ffffffcc;
-  border-radius: 12px;
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  color: #333;
-  line-height: 1.6;
-  backdrop-filter: blur(8px);
 }
 
-#telaCausa h1 {
-  font-size: 2em;
-  margin-bottom: 20px;
-  color: #004880;
-  text-align: center;
+/* Telas Rafael, Andrea, Hailton e Patricya */
+#telaRafaelChaveiro,
+#telaAndreaCampos,
+#telaHailtonPatrick,
+#telaPatricyaKelly {
+  /* Mesma formatação das outras telas internas */
 }
 
-#telaCausa p {
-  font-size: 1.1em;
-  margin-bottom: 16px;
-  text-align: justify;
-}
-
-#telaCausa img {
-  max-width: 100%;
-  height: auto;
-  border-radius: 12px;
-  box-shadow: 0 8px 24px rgba(0,0,0,0.15);
-  display: block;
-  margin: 0 auto 20px auto;
-}
-
-#telaCausa button {
-  display: block;
-  margin: 30px auto 0;
-  padding: 12px 24px;
-  background-color: #004880;
-  color: #fff;
-  border: none;
-  border-radius: 6px;
-  font-size: 1em;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-}
-
-#telaCausa button:hover {
-  background-color: #0072b1;
-}
+/* Agora garantir que as telas internas tenham a classe para aplicar o estilo */
+/* Pode fazer via JS ou manualmente no HTML: adicione class="tela-interna" em cada div interna */
