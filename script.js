@@ -6,10 +6,13 @@ function mostrarTela(id) {
   if (telaEscolhida) {
     telaEscolhida.classList.remove('tela-oculta');
 
+    // Sempre volta ao topo quando qualquer tela abrir
+    window.scrollTo(0, 0);
+
+    // Reajusta mapa interativo só na tela inicial
     if (id === 'telaInicial') {
-      window.scrollTo(0, 0);  // Volta ao topo
       if (typeof imageMapResize === 'function') {
-        imageMapResize();  // Reajusta o mapa interativo
+        imageMapResize();
       }
     }
   }
